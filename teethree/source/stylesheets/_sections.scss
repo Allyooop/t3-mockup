@@ -1,0 +1,33 @@
+.quote-banner {
+  
+  padding: 30px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  
+  .banner {
+    
+    background-color: #fff;
+    padding: 15px 0 0 0;
+    
+    h2 {
+      
+      color: $brand-info;
+    }
+  }
+}
+
+.site-banner {
+  
+  padding: 5px;
+  
+  .banner {
+    
+    background-color: #fff;
+    padding: 35px 0 35px 0;
+    
+    h1 {
+      
+      color: $brand-info;
+    }
+  }
+}
