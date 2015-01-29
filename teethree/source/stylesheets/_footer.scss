@@ -1,7 +1,12 @@
 footer {
   
   background-color: #fff;
-  color: $text-color;
+  color: darken($brand-primary, 5%);
+  padding: 20px;
+  font-size: 14px;
+  font-family: $font-family-sans-serif;
   
-  
+  p {
+    margin: 0;
+  }
 }
