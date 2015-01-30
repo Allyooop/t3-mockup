@@ -1,0 +1,20 @@
+.btn-edms {
+  @extend .btn-link;
+  border-top: 1px solid $brand-info;
+  border-bottom: 1px solid $brand-info;
+  color: $brand-info;
+}
+
+.btn-epr {
+  @extend .btn-link;
+  border-top: 1px solid $brand-primary;
+  border-bottom: 1px solid $brand-primary;
+  color: $brand-primary;
+}
+
+.btn-cp {
+  @extend .btn-link;
+  border-top: 1px solid $brand-warning;
+  border-bottom: 1px solid $brand-warning;
+  color: $brand-warning;
+}

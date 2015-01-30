@@ -5,3 +5,11 @@
   }
   
 }
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: $brand-primary;
+}

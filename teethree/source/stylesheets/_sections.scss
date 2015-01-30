@@ -1,6 +1,4 @@
 .quote-banner {
-  
-  padding: 30px;
   margin-bottom: 15px;
   margin-top: 15px;
   
@@ -19,15 +17,30 @@
 .site-banner {
   
   padding: 5px;
+  margin-bottom: 15px;
   
   .banner {
-    
-    background-color: #fff;
-    padding: 35px 0 35px 0;
     
     h1 {
       
       color: $brand-info;
     }
   }
+}
+
+.video-banner {
+  
+  margin: 15px 0 15px 0;
+}
+
+.news-banner {
+  
+  margin: 15px 0 15px 0;
+}
+
+.well {
+  
+  background-color: #fff;
+  border: 0px;
+  border-radius: 0px;
 }
