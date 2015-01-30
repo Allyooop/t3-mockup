@@ -2,7 +2,7 @@
   
   font-family: Impact, Charcoal, sans-serif;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 p {
@@ -13,4 +13,23 @@ p {
 h1, h2, h3, h4, h5, h6 {
   
   color: $brand-primary;
+}
+
+.breadcrumb {
+  background-color: inherit;
+}
+
+.font-color-secondary {
+  
+  color: $brand-info;
+}
+
+body {
+  
+  font-family: $font-family-sans-serif;
+}
+
+.lead {
+  
+  font-size: 24px;
 }
