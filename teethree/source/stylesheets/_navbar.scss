@@ -13,3 +13,16 @@
 .navbar-default .navbar-toggle .icon-bar {
   background-color: $brand-primary;
 }
+
+.navbar-right .dropdown-menu {
+  right: auto;
+}
+
+.navbar {
+  
+  font-size: 17px;
+}
+
+.navbar-nav > li > a {
+  margin: 11px 2px;
+}
