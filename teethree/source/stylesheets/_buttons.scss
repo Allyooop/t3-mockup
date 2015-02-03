@@ -1,20 +1,29 @@
 .btn-edms {
   @extend .btn-link;
-  border-top: 1px solid $brand-info;
-  border-bottom: 1px solid $brand-info;
+  border: 2px solid $brand-info;
   color: $brand-info;
+  
+  &:hover {
+    color: saturate($brand-info, 10%);
+  }
 }
 
 .btn-epr {
   @extend .btn-link;
-  border-top: 1px solid $brand-primary;
-  border-bottom: 1px solid $brand-primary;
+  border: 2px solid $brand-primary;
   color: $brand-primary;
+  
+  &:hover {
+    color: saturate($brand-primary, 10%);
+  }
 }
 
 .btn-cp {
   @extend .btn-link;
-  border-top: 1px solid $brand-warning;
-  border-bottom: 1px solid $brand-warning;
+  border: 2px solid $brand-warning;
   color: $brand-warning;
+  
+  &:hover {
+    color: saturate($brand-warning, 10%);
+  }
 }
