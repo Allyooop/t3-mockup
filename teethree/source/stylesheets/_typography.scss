@@ -49,3 +49,21 @@ hr {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
+.alert {
+  
+  border-radius: 0;
+  margin-bottom: 20px;
+  
+  a {
+    color: #fff;
+    
+    &:hover {
+      
+      color: #fff;
+      
+    }
+    
+  }
+  
+}
