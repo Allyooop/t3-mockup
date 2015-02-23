@@ -12,6 +12,12 @@ h1, h2, h3, h4, h5, h6 {
   background-color: inherit;
 }
 
+.font-color-main {
+	
+	color: $brand-primary;
+	
+}
+
 .font-color-secondary {
   
   color: $brand-info;
@@ -49,6 +55,19 @@ hr {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
+blockquote{
+	
+	footer{
+		
+		color: lighten($gray, 5%);
+		padding: 5px 10px;
+		
+	}
+	
+}
+
+
 
 .alert {
   
