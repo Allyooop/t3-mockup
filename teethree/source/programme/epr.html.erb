@@ -42,6 +42,7 @@ title: Electronic Patient Record (EPR)
         
         <div class="well">
           <h2>Key Benefits</h2>
+					<%= image_tag "touchscreen_laptop_web.jpg", class: "hidden-xs pull-right pad-left", height: "400"  %>
           <p class="lead">Patients deserve and expect the best care. If we are to remain one of the leading NHS hospital trusts in the country, we need to have up-to-date and accurate information about our patients</p>
 					<h4>Improving patient care</h4>
 					<p>Currently patient information is collected in a number of different ways and using different computer systems. Our systems are limited in what they can do and they can’t always be accessed in all areas of the hospital and community sites. We often have a very disjointed way of collecting and viewing our patient information. The new system will give us a full patient record, available in multiple locations which will improve how we care for our patients.</p>
@@ -59,6 +60,7 @@ title: Electronic Patient Record (EPR)
 				<div class="well">
 					
 					<h3>Additional Benefits</h3>
+					<%= image_tag "___laptop.jpg", class: "hidden-xs pull-right pad-left", height: "250"  %>
 					<p>As well as the previous benefits, moving towards an Electronic Patient Record system will have the following benefits:</p>
 					<div class="question-group" id="accordion additional-benefits" role="tablist" aria-multiselectable="true">
 				
@@ -233,26 +235,4 @@ title: Electronic Patient Record (EPR)
   </div>
 </section>
 
-<section class="news-banner">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="well">
-          <img src="http://placehold.it/150x150" class="pull-right">
-          <h3>Title of news article</h3>
-          <p class="lead">Summary of the news article or up to date information</p>
-          <a class="btn btn-primary">Link to article</a>
-        </div>
-      </div>
-      
-      <div class="col-md-6">
-        <div class="well">
-          <img src="http://placehold.it/150x150" class="pull-right">
-          <h3>Title of news article</h3>
-          <p class="lead">Summary of the news article or up to date information</p>
-          <a class="btn btn-primary">Link to article</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<%= partial '/partials/news_block' %>
