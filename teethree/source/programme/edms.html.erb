@@ -51,12 +51,7 @@ title: Electronic Document Management System
 					<p>EDMS promises to save us time searching for notes, transferring notes from one site to another, analysing and comparing notes.</p>
 				</div>
 				
-				<div class="well">
-          <h3>On the lookout for Champions</h3>
-          <p class="lead">Would you be willing to be one of the first people to use our new technology?</p>
-          <p>We’re searching for staff to be trained up as Champions to help with the introduction of the new technology this year. Champions will get special training to use the Clinical Portal, EPR and EDMS systems before everyone else. They will act as experts in their department to help others, if needed, when we go live.</p>
-          <p>To find out more, please contact Kathryn Cox, training lead at <a href="mailto:Kathryn.cox@sth.nhs.uk">Kathryn.cox@sth.nhs.uk</a></p>
-        </div>
+				<%= partial 'partials/champion' %>
         
       </div>
       
@@ -66,7 +61,6 @@ title: Electronic Document Management System
 				
 				<div class="well">
 					<h3>Frequently Asked Questions</h3>
-					<p>Paragraph about things...</p>
 					<h5>Has the Trust considered CNS nursing documentation which is currently in separate paper cards/files. How can this all be pulled together?</h5>
 					<p>An exercise is underway to confirm all of the clinical documentation used in patient records, to agree how this information will be recorded and stored on implementation.</p>
 					<h5>Is EDMS only for patient related documentation or is it for any documentation used within the trust?</h5>
@@ -77,11 +71,7 @@ title: Electronic Document Management System
 					<p>We are currently having the software installed onto some laptops so we can start attending directorate meetings to demonstrate the system fully and explain the process.</p>
 				</div>
         
-        <div class="well">
-          <h3>Contact us</h3>
-          <p>introduce the team and phone numbers</p>
-        </div>
-        
+       <%= partial 'partials/contact' %>
         
         <div class="well">
           <h3>Further resources</h3>
