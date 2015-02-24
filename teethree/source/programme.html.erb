@@ -56,13 +56,18 @@ title: "About - Transformation Through Technology"
 						<li>Clinical Portal</li>
 					</ul>
 					<p>Go live for the new systems is Autumn 2015 but the opportunities for new ways of working will continue beyond this.</p>
+				</div>
 				
-				
+				<div class="well">
+					<h2>Does your computer need upgrading?</h2>
+					<p>Some people still have Windows XP computers and these will need to be updated to the New Corporate Desktop in order to access the new technology. Please contact the IT Service Desk on ext:15369 if you haven’t got a New Corporate Desktop computer.</p>
+					<p>Computers which have New Corporate Desktop installed will say Windows 7 enterprise when you log on.</p>
+					<p> Computers which are still Windows XP and need to be updated will say Windows XP when you click ctrl + alt + delete together at once.</p>
 				</div>
         
         <div class="well">
           <ul class="list-inline text-center">
-            <li><a href="/t3/programming/training.html">Training</a></li>
+						 <li><%= link_to 'Staff Training', '/programme/training.html'  %></li>
             <li><a href="/t3/news.html">News &amp; Events</a></li>
             <li><a href="/t3/team.html">Meet the team</a></li>
             <li><a href="/t3/programme/training.html#hospital-of-the-future">Hospital of the future</a></li>
@@ -98,33 +103,9 @@ title: "About - Transformation Through Technology"
             in once to view all patient information systems on one screen.</p>
           <a href="/t3/programme/cp.html" class="btn btn-cp">Find out more</a>
         </div>
-          
-        
       </div> 
     </div>
   </div>
 </section>
 
-<section class="news-banner">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="well">
-          <img src="http://placehold.it/150x150" class="pull-right">
-          <h3>Title of news article</h3>
-          <p class="lead">Summary of the news article or up to date information</p>
-          <a class="btn btn-primary">Link to article</a>
-        </div>
-      </div>
-      
-      <div class="col-md-6">
-        <div class="well">
-          <img src="http://placehold.it/150x150" class="pull-right">
-          <h3>Title of news article</h3>
-          <p class="lead">Summary of the news article or up to date information</p>
-          <a class="btn btn-primary">Link to article</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<%= partial 'partials/news_block' %>
