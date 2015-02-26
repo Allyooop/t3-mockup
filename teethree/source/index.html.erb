@@ -9,17 +9,13 @@ title: Transformation Through Technology
 				<% link_to 'programme.html' do %>
 					<%= image_tag 't3_banner.png', class: 'img-responsive', width: "100%" %>
 				<% end %>
-				
 				<div class="well">
 					<p class="lead text-center">Transformation Through Technology is a multi -million pound transformational change programme centred on further improving patient care delivered in our hospitals and in the community</p>
 				</div>
-				
       </div>
     </div>
   </div>
 </section>
-
-
 
 <section class="site-redirect">
   <div class="container">
@@ -37,7 +33,9 @@ title: Transformation Through Technology
   <div class="container">
     <div class="row text-center">
       <div class="col-sm-4">
-				<%= image_tag 'staff_edms_web.jpg', class: "img-responsive hidden-xs" %>
+				<% link_to '/programme/edms.html' do %>
+					<%= image_tag 'staff_edms_web.jpg', class: "img-responsive hidden-xs" %>
+				<% end %>
         <div class="well">
           <h3 class="visible-xs">Electronic Document Management System (EDMS)</h3>
           <p>Converting patient casenotes into an electronic format so that they can
@@ -47,7 +45,9 @@ title: Transformation Through Technology
       </div>
 
       <div class="col-sm-4">
-				<%= image_tag 'staff_epr_web.jpg', class: "img-responsive hidden-xs" %>
+				<% link_to '/programme/epr.html' do %>
+					<%= image_tag 'staff_epr_web.jpg', class: "img-responsive hidden-xs" %>
+				<% end %>
         <div class="well">
           <h3 class="visible-xs">Electronic Patient Record (EPR)</h3>
           <p>Recording of all patient information electronically on one system. Enabling information sharing, electronic prescribing and electronic clinic
@@ -57,8 +57,10 @@ title: Transformation Through Technology
       </div>
 
       <div class="col-sm-4">
-				<%= image_tag 'staff_cp_web.jpg', class: "img-responsive hidden-xs" %>
-        <div class="well">
+				<% link_to '/programme/cp.html' do %>
+					<%= image_tag 'staff_cp_web.jpg', class: "img-responsive hidden-xs" %>
+        <% end %>
+				<div class="well">
           <h3 class="visible-xs">Clinical Portal (CP)</h3>
           <p>Linking up of all existing computer systems, meaning you only have to log
             in once to view all patient information systems on one screen.</p>

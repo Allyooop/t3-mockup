@@ -79,26 +79,32 @@ title: "About - Transformation Through Technology"
       <div class="col-md-4" role="aside">
         
 				
-				<%= image_tag 'staff_edms_web.jpg', class: "img-responsive hidden-xs hidden-sm" %>
+				<% link_to '/programme/edms.html' do %>
+					<%= image_tag 'staff_edms_web.jpg', class: "img-responsive hidden-xs" %>
+				<% end %>
         <div class="well">
-          <a href="#"><h3 class="visible-xs visible-sm">Electronic Document Management System (EDMS)</h3></a>
+          <a href="/t3/programme/edms.html"><h3 class="visible-xs visible-sm">Electronic Document Management System (EDMS)</h3></a>
           <p>Converting patient casenotes into an electronic format so that they can
             be viewed and managed on screen 24/7</p>
           <a href="/t3/programme/edms.html" class="btn btn-edms">Find out more</a>
         </div>
         
-				<%= image_tag 'staff_epr_web.jpg', class: "img-responsive hidden-xs hidden-sm" %>
+				<% link_to '/programme/epr.html' do %>
+					<%= image_tag 'staff_epr_web.jpg', class: "img-responsive hidden-xs" %>
+				<% end %>
         <div class="well">
-          <a href="#"><h3 class="visible-xs visible-sm">Electronic Patient Record (EPR)</h3></a>
+          <a href="/t3/programme/epr.html"><h3 class="visible-xs visible-sm">Electronic Patient Record (EPR)</h3></a>
           <p>Recording of all patient information electronically on one system. Will
             enable information sharing, electronic prescribing and electronic clinic
             management</p>
-          <a href="#" class="btn btn-epr">Find out more</a>
+          <a href="/t3/programme/epr.html" class="btn btn-epr">Find out more</a>
         </div>
         
-				<%= image_tag 'staff_cp_web.jpg', class: "img-responsive hidden-xs hidden-sm" %>
+				<% link_to '/programme/cp.html' do %>
+					<%= image_tag 'staff_cp_web.jpg', class: "img-responsive hidden-xs" %>
+        <% end %>
         <div class="well">
-          <a href="#"><h3 class="visible-xs visible-sm">Clinical Portal (CP)</h3></a>
+          <a href="/t3/programme/cp.html"><h3 class="visible-xs visible-sm">Clinical Portal (CP)</h3></a>
           <p>Linking up of all existing computer systems, meaning you only have to log
             in once to view all patient information systems on one screen.</p>
           <a href="/t3/programme/cp.html" class="btn btn-cp">Find out more</a>
