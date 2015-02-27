@@ -32,10 +32,16 @@ title: "News - Transformation Through Technology"
           <p class="lead">Something something latest news from the transformation through technology project</p>
         </div>
         
-        <%= partial 'partials/article' %>
         
-        <%= partial 'partials/article_sub' %>
-        <%= partial 'partials/article_sub' %>
+        
+        <article class="well">
+          <a href="/t3/news/clinical-portal-set-to-go-live-this-autumn.html"><h2>Clinical Portal Set to Go Live this Autumn</h2></a>
+          <p class="lead">Sheffield Teaching Hospitals appoint HP Enterprise Services UK to develop new clinical portal to go live in August 2015</p>
+          <%= link_to 'Read more', '/news/clinical-portal-set-to-go-live-this-autumn.html', class: "btn btn-primary" %> 
+         </article>
+        
+        
+
         
       </div>
      
@@ -45,7 +51,7 @@ title: "News - Transformation Through Technology"
         <div class="well">
           <h3>Recent News &amp; Events</h3>
           <ul class="list-unstyled">
-            <li><a href="#">Link to article</a></li>
+            <li><%= link_to 'Clinical Portal Set to Go Live this Autumn', '/news/clinical-portal-set-to-go-live-this-autumn.html' %> </li>
             <li><a href="#">Link to article</a></li>
             <li><a href="#">Link to article</a></li>
             <li><a href="#">Link to article</a></li>
