@@ -54,7 +54,7 @@ title: "News - Transformation Through Technology"
           <h3>Recent News &amp; Events</h3>
           <ul class="list-unstyled">
           <% data.news.article.each do |x| %>
-            <li><a href="<%= x['slug'] %>"><%= x['title'] %></a></li>
+            <li><%= link_to x['title'], x['slug'] %></li>
           <% end %>
           </ul>
         </div>
