@@ -29,14 +29,14 @@ title: "News - Transformation Through Technology"
       <div class="col-md-8" role="main">
         <div class="well">
           <h2>News &amp; Events</h2>
-          <p class="lead">Something something latest news from the transformation through technology project</p>
+          <p class="lead">Catch up with the latest news and developments from the transformation through technology project</p>
         </div>
         
         <% data.news.article.each do |x| %>
         <article class="well">
           <a href="<%= x['slug'] %>"><h2><%= x['title'] %></h2></a>
           <p class="lead"><%= x['intro'] %></p>
-          <%= link_to 'Read more', x['slug'], class: "btn btn-primary" %>
+          <%= link_to 'Find out more', x['slug'], class: "btn btn-primary" %>
         </article>
         <% end %>
         
@@ -48,22 +48,16 @@ title: "News - Transformation Through Technology"
         <div class="well">
           <h3>Recent News &amp; Events</h3>
           <ul class="list-unstyled">
-            <li><%= link_to 'Clinical Portal Set to Go Live this Autumn', '/news/clinical-portal-set-to-go-live-this-autumn.html' %> </li>
-            <li><a href="#">Link to article</a></li>
-            <li><a href="#">Link to article</a></li>
-            <li><a href="#">Link to article</a></li>
-            <li><a href="#">Link to article</a></li>
+          <% data.news.article.each do |x| %>
+            <li><a href="<%= x['slug'] %>"><%= x['title'] %></a></li>
+          <% end %>
           </ul>
         </div>
         
        <%= partial 'partials/contact' %>
         
        <%= partial 'partials/champion' %>
-        
-        <div class="well">
-          <h3>Further resources</h3>
-          <p>Links, presentations, videos etc. here</p>
-        </div>
+       
       </div>
       
     </div>
