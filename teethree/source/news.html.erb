@@ -34,7 +34,12 @@ title: "News - Transformation Through Technology"
         
         <% data.news.article.each do |x| %>
         <article class="well">
-          <a href="<%= x['slug'] %>"><h2><%= x['title'] %></h2></a>
+          <% link_to x['slug'] do %>
+            <h2><%= x['title'] %></h2>
+          <% end %>
+          
+
+          
           <p class="lead"><%= x['intro'] %></p>
           <%= link_to 'Find out more', x['slug'], class: "btn btn-primary" %>
         </article>
