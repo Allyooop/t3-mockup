@@ -9,31 +9,34 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/t3/index.html"><%= image_tag 'http://www.sth.nhs.uk/images/sheffield-teaching-hospitals.gif' %></a>
+          <% link_to "/index.html", class: "navbar-brand" do %>
+            <%= image_tag 'http://www.sth.nhs.uk/images/sheffield-teaching-hospitals.gif' %>
+          <% end %>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="/t3/index.html">Home</a></li>
-            <li><a href="/t3/patients.html">Information for Patients</a></li>
+            
+            <li><%= link_to "Home", "/index.html" %></li>
+            <li><%= link_to "Information for Patients", "/patients.html" %></li>
             
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About the programme <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="/t3/programme.html">Transformation through Technology programme</a></li>
+                <li><%= link_to "Transformation through Technology programme", "/programme.html" %></li>
                 <li class="divider"></li>
-                <li><a href="/t3/programme/edms.html">Electronic Document Management System (EDMS)</a></li>
-                <li><a href="/t3/programme/epr.html">Electronic Patient Record (EPR)</a></li>
-                <li><a href="/t3/programme/cp.html">Clinical Portal (CP)</a></li>
+                <li><%= link_to "Electronic Document Management System (EDMS)", "/programme/edms.html" %></li>
+                <li><%= link_to "Electronic Patient Record (EPR)", "/programme/epr.html" %></li>
+                <li><%= link_to "Clinical Portal (CP)", "/programme/cp.html" %></li>
                 <li class="divider"></li>
-                <li><a href="/t3/programme/training.html#hospital-of-the-future">Hospital of the future</a></li>
-                <li><a href="/t3/programme/training.html">Staff Training</a></li>
+                <li><%= link_to "Hospital of the future", "/programme/training.html#hospital-of-the-future" %></li>
+                <li><%= link_to "Staff Training", "/programme/training.html" %></li>
                 <li class="divider"></li>
-                <li><a href="/t3/patients.html">Information for Patients</a></li>
+                <li><%= link_to "Information for Patients", "/patients.html" %></li>
               </ul>
             </li>
 						
-						<li><a href="/t3/team.html">Meet the team</a></li>
-            <li><a href="/t3/news.html">News &amp; Events</a></li>
+						<li><%= link_to "Meet the team", "/team.html" %></li>
+            <li><%= link_to "News & Events", "/news.html" %></li>
             
           </ul>
         </div>

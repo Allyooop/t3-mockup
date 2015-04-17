@@ -16,8 +16,8 @@ title: Transformation Through Technology
   <div class="container">
     <div class="row">
       <ol class="breadcrumb">
-        <li><%= link_to 'Home', "index.html" %></li>
-        <li><%= link_to 'About', "programme.html" %></li>
+        <li><%= link_to 'Home', "/index.html" %></li>
+        <li><%= link_to 'About', "/programme.html" %></li>
         <li class="active">Training</li>
       </ol>
     </div>
@@ -56,7 +56,7 @@ title: Transformation Through Technology
           <a href="mailto:transformation@sth.nhs.uk" class="btn btn-primary">Get in touch about training</a>
         </div>
 				
-				<%= partial 'partials/smartcard' %>
+				
         
         <div class="well" id="hospital-of-the-future">
           <h2>Hospital of the Future Training Center</h2>
@@ -67,6 +67,9 @@ title: Transformation Through Technology
           <p>Hospital of the Future is located on B floor of the Royal Hallamshire Hospital (where the former Admissions Assessment Unit (AAU) was located). This is a very exciting project as we will be one of the only hospitals in the country to benefit from this type of showcase area. This is an ideal place for people to come and see first-hand how we are changing the way we work.</p>        
           <p>We are also inviting our future suppliers to support the facility by using it to demonstrate future technologies. We will keep you updated on news about Hospital of the Future here.</p>    
         </div>
+        
+        <%= partial 'partials/smartcard' %>
+        
       </div>
       
       <div class="col-md-4" role="aside">
