@@ -16,8 +16,8 @@ title: Electronic Document Management System
   <div class="container">
     <div class="row">
       <ol class="breadcrumb">
-        <li><a href="/t3/index.html">Home</a></li>
-        <li><a href="/t3/programme.html">About</a></li>
+        <li><%= link_to 'Home', "index.html" %></li>
+        <li><%= link_to 'About', "programme.html" %></li>
         <li class="active">Electronic Document Management System (EDMS)</li>
       </ol>
     </div>
@@ -53,6 +53,8 @@ title: Electronic Document Management System
 				
 				<%= partial 'partials/champion' %>
         
+        <%= partial 'partials/smartcard' %>
+        
       </div>
       
       <div class="col-md-4" role="aside">
@@ -75,7 +77,15 @@ title: Electronic Document Management System
         
         <div class="well">
           <h3>Further resources</h3>
-          <a href="../files/EDMS_Staff_Briefing.pdf"><h4>How would the EDMS system work? - Staff Briefing</h4></a>
+          
+          <% link_to '/files/EDMS_Staff_Briefing.pdf' do %>
+            <h4>How would the EDMS system work? - Staff Briefing</h4>
+          <% end %>
+          
+          <h4>Project Newsletter - March</h4>
+							<% link_to '/files/march_newsletter.pdf' do %>
+								<%= image_tag 'news_march_2015.jpg', width: "150" %>
+							<% end %>
 					
 					<h4>Electronic Document Management System Newsletter - Sept</h4>
 							<% link_to '/files/edms_newsletter_sept.pdf' do %>

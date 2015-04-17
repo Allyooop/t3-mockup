@@ -16,7 +16,7 @@ title: "About - Transformation Through Technology"
   <div class="container">
     <div class="row">
       <ol class="breadcrumb">
-        <li><a href="/t3/index.html">Home</a></li>
+        <li><%= link_to 'Home', "index.html" %></li>
         <li class="active">About</li>
       </ol>
     </div>
@@ -97,9 +97,9 @@ title: "About - Transformation Through Technology"
         <div class="well">
           <ul class="list-inline text-center">
 						 <li><%= link_to 'Staff Training', '/programme/training.html'  %></li>
-            <li><a href="/t3/news.html">News &amp; Events</a></li>
-            <li><a href="/t3/team.html">Meet the team</a></li>
-            <li><a href="/t3/programme/training.html#hospital-of-the-future">Hospital of the future</a></li>
+            <li><%= link_to 'News and Events', "news.html" %></li>
+            <li><%= link_to 'Meet the Team', "team.html" %></li>
+            <li><%= link_to 'Hospital of the Future', "/programme/training.html#hospital-of-the-future" %></li>
           </ul>
         </div>
         
@@ -112,31 +112,37 @@ title: "About - Transformation Through Technology"
 					<%= image_tag 'staff_edms_web.jpg', class: "img-responsive hidden-xs" %>
 				<% end %>
         <div class="well">
-          <a href="/t3/programme/edms.html"><h3 class="visible-xs visible-sm">Electronic Document Management System (EDMS)</h3></a>
+          <% link_to '/programme/edms.html' do %>
+            <h3 class="visible-xs visible-sm">Electronic Document Management System (EDMS)</h3>
+          <% end %>
           <p>Converting patient casenotes into an electronic format so that they can
             be viewed and managed on screen 24/7</p>
-          <a href="/t3/programme/edms.html" class="btn btn-edms">Find out more</a>
+          <%= link_to 'Find out more', "/programme/edms.html", class: "btn btn-edms" %>
         </div>
         
 				<% link_to '/programme/epr.html' do %>
 					<%= image_tag 'staff_epr_web.jpg', class: "img-responsive hidden-xs" %>
 				<% end %>
         <div class="well">
-          <a href="/t3/programme/epr.html"><h3 class="visible-xs visible-sm">Electronic Patient Record (EPR)</h3></a>
+          <% link_to '/programme/epr.html' do %>
+            <h3 class="visible-xs visible-sm">Electronic Patient Record (EPR)</h3>
+          <% end %>
           <p>Recording of all patient information electronically on one system. Will
             enable information sharing, electronic prescribing and electronic clinic
             management</p>
-          <a href="/t3/programme/epr.html" class="btn btn-epr">Find out more</a>
+          <%= link_to 'Find out more', "/programme/epr.html", class: "btn btn-epr" %>
         </div>
         
 				<% link_to '/programme/cp.html' do %>
 					<%= image_tag 'staff_cp_web.jpg', class: "img-responsive hidden-xs" %>
         <% end %>
         <div class="well">
-          <a href="/t3/programme/cp.html"><h3 class="visible-xs visible-sm">Clinical Portal (CP)</h3></a>
+          <% link_to '/programme/cp.html' do %>
+            <h3 class="visible-xs visible-sm">Clinical Portal (CP)</h3>
+          <% end %>
           <p>Linking up of all existing computer systems, meaning you only have to log
             in once to view all patient information systems on one screen.</p>
-          <a href="/t3/programme/cp.html" class="btn btn-cp">Find out more</a>
+          <%= link_to 'Find out more', "/programme/cp.html", class: "btn btn-cp" %>
         </div>
       </div> 
     </div>

@@ -16,8 +16,8 @@ title: Clinical Portal (CP)
   <div class="container">
     <div class="row">
       <ol class="breadcrumb">
-        <li><a href="/t3/index.html">Home</a></li>
-        <li><a href="/t3/programme.html">About</a></li>
+        <li><%= link_to 'Home', "index.html" %></li>
+        <li><%= link_to 'About', "programme.html" %></li>
         <li class="active">Clinical Portal (CP)</li>
       </ol>
     </div>
@@ -80,13 +80,17 @@ title: Clinical Portal (CP)
 
 				</div>
         
-      	 <%= partial 'partials/champion' %>
-        
+      	<%= partial 'partials/champion' %>
         <%= partial 'partials/contact' %>
-        
+        <%= partial 'partials/smartcard' %>
         
         <div class="well">
           <h3>Further resources</h3>
+          <h4>Project Newsletter - March</h4>
+							<% link_to '/files/march_newsletter.pdf' do %>
+								<%= image_tag 'news_march_2015.jpg', width: "150" %>
+							<% end %>
+          
           <h4>Clinical Portal Newsletter - Sept</h4>
 							<% link_to '/files/cp_newsletter_sept.pdf' do %>
 								<%= image_tag 'news_cp_sept.jpg', width: "150" %>

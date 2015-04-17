@@ -16,8 +16,8 @@ title: Electronic Patient Record (EPR)
   <div class="container">
     <div class="row">
       <ol class="breadcrumb">
-        <li><a href="/t3/index.html">Home</a></li>
-        <li><a href="/t3/programme.html">About</a></li>
+        <li><%= link_to 'Home', "index.html" %></li>
+        <li><%= link_to 'About', "programme.html" %></li>
         <li class="active">Electronic Patient Record (EPR)</li>
       </ol>
     </div>
@@ -180,7 +180,8 @@ title: Electronic Patient Record (EPR)
 				
 				
 				<%= partial 'partials/champion' %>
-				
+				<%= partial 'partials/smartcard' %>
+        
       </div>
       
       <div class="col-md-4" role="aside">
@@ -217,11 +218,19 @@ title: Electronic Patient Record (EPR)
         
         <div class="well">
           <h3>Further resources</h3>
-          <a href="../files/williams_story_EPR.pdf"><h4>How would the EPR system work? - William's Story</h4></a>
+          
+          <% link_to "/files/williams_story_EPR.pdf" do  %>
+            <h4>How would the EPR system work? - William's Story</h4>
+          <% end %>
+         
 					
+           <h4>Project Newsletter - March</h4>
+							<% link_to "/files/march_newsletter.pdf" do %>
+								<%= image_tag 'news_march_2015.jpg', width: "150" %>
+							<% end %>
 					
 					<h4>Electronic Patient Record Newsletter - Sept</h4>
-							<% link_to '/files/epr_newsletter_sept.pdf' do %>
+							<% link_to "/files/epr_newsletter_sept.pdf" do %>
 								<%= image_tag 'news_epr_sept.jpg', width: "150" %>
 							<% end %>
         </div>

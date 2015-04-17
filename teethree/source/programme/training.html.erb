@@ -16,8 +16,8 @@ title: Transformation Through Technology
   <div class="container">
     <div class="row">
       <ol class="breadcrumb">
-        <li><a href="/t3/index.html">Home</a></li>
-        <li><a href="/t3/programme.html">About</a></li>
+        <li><%= link_to 'Home', "index.html" %></li>
+        <li><%= link_to 'About', "programme.html" %></li>
         <li class="active">Training</li>
       </ol>
     </div>
@@ -56,10 +56,7 @@ title: Transformation Through Technology
           <a href="mailto:transformation@sth.nhs.uk" class="btn btn-primary">Get in touch about training</a>
         </div>
 				
-				<div class="well">
-					<h2 id="smart-cards">Smart Cards</h2>
-					<p>It is estimated that around 4,000 staff need to get a new Smartcard to get secure access to the new systems being implemented as part of Transformation Through Technology. Over the next few months the project team will be visiting wards and departments to start the process of giving out new Smartcards.</p>
-				</div>
+				<%= partial 'partials/smartcard' %>
         
         <div class="well" id="hospital-of-the-future">
           <h2>Hospital of the Future Training Center</h2>
