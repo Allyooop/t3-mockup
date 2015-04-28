@@ -31,7 +31,7 @@ title: "About - Transformation Through Technology"
         <div class="well">
           <h2>What’s changing?</h2>
           <p class="lead">Transformation Through Technology is a transformational change programme centred on improving patient care.</p>
-          <p>As a Trust, we are investing £35 million over the next five years in this programme. Transformation Through Technology is significantly changing the way we work and deliver care. With the help of new technology, in future we will have:/p>
+          <p>As a Trust, we are investing £35 million over the next five years in this programme. Transformation Through Technology is significantly changing the way we work and deliver care. With the help of new technology, in future we will have:</p>
           <ul>
             <li>Quicker hospital admission and discharge</li>
             <li>Better assessment and more informed treatment because previous medical records will be available instantly</li>
@@ -65,34 +65,7 @@ title: "About - Transformation Through Technology"
           <%= link_to 'Find out more', '/programme/training.html#hospital-of-the-future', class: "btn btn-block btn-primary" %>
 				</div>
 				
-				<div class="well">
-					<h2>Newsletters</h2>
-					<p>Catch up with news and development in our regular newsletters. Explore our newsletters below:</p>
-					<ul class="list list-inline">
-						
-						<li>
-							<h4 class="newsletter-header">EDMS - Sept</h4>
-							<% link_to '/files/edms_newsletter_sept.pdf' do %>
-								<%= image_tag 'news_edms_sept.jpg', width: "150" %>
-							<% end %>
-						</li>
-						
-						<li>
-							<h4 class="newsletter-header">EPR - Sept</h4>
-							<% link_to '/files/epr_newsletter_sept.pdf' do %>
-								<%= image_tag 'news_epr_sept.jpg', width: "150" %>
-							<% end %>
-						</li>
-						
-						<li>
-							<h4 class="newsletter-header">CP - Sept</h4>
-							<% link_to '/files/cp_newsletter_sept.pdf' do %>
-								<%= image_tag 'news_cp_sept.jpg', width: "150" %>
-							<% end %>
-						</li>
-						
-				</ul>
-				</div>
+				<%= partial 'partials/newsletters' %>
         
         <div class="well">
           <ul class="list-inline text-center">

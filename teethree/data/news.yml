@@ -1,4 +1,10 @@
 article:
+ -  title: "Sessions available to see the new Electronic Document Management System (EDMS) in action"
+    intro: "Book now to get first hand experience with our new Electronic Document Management System"
+    slug: "/news/electronic-document-management-system-in-action.html"
+ -  title: "See the new Lorenzo Electronic Patient Record (EPR) in action"
+    intro: "Book now to get first hand experience with our new Electronic Patient Record system"
+    slug: "/news/see-lorenzo-in-action.html"
  -  title: "Clinical Portal set to go live this Autumn"
     intro: "Sheffield Teaching Hospitals appoint HP Enterprise Services UK to develop new clinical portal to go live in August 2015"
     slug: "/news/clinical-portal-set-to-go-live-this-autumn.html"
