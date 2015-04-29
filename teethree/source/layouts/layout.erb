@@ -10,7 +10,12 @@
     <%= partial "partials/favicons" %>
     
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Transformation Through Technology" %></title>
+    
+    <% if content_for?(:meta_tags) %>
+        <%= yield_content :meta_tags %>
+    <% else %>
+        <title><%= current_page.data.title || "Transformation Through Technology" %></title>
+    <% end %>
     
     <%= stylesheet_link_tag "main" %>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
