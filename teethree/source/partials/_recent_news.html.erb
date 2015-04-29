@@ -1,0 +1,12 @@
+<article class="well">
+  <h3>Recent News &amp; Events</h3>
+ <ul class="list list-unstyled">
+        <% data.news.article.each do |x| %>
+        
+          <% link_to x['slug'] do %>
+              <li><%= x['title'] %></li>
+          <% end %>
+        
+        <% end %>
+  </ul> 
+</article>
