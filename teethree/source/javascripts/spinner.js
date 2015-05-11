@@ -1,11 +1,11 @@
-jquery(document).on('page:fetch', function() {
+$(document).on('page:fetch', function() {
   //jquery(".loading-indicator").show();
-  jquery("html").css( "cursor", "progress" )
+  $("html").css( "cursor", "progress" )
   return
 });
 
-jquery(document).on('page:change', function() {
+$(document).on('page:change', function() {
   //jquery(".loading-indicator").hide();
-  jquery("html").css( "cursor", "auto" )
+  $("html").css( "cursor", "auto" )
   return
 });
