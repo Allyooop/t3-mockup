@@ -28,6 +28,8 @@
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
 
+page "/404.html", :directory_index => false
+
 ###
 # Helpers
 ###
@@ -58,7 +60,6 @@ configure :build do
   activate :minify_javascript
   # activate :asset_hash
   activate :relative_assets
-  set :relative_links, true
   activate :directory_indexes
   
   # Or use a different image path
